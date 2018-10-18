@@ -6,10 +6,14 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
   modules: {},
   state: {
-    loading: true
+    loading: false
   },
   actions: {},
-  mutations: {},
+  mutations: {
+    setLoading(state) {
+      state.loading = !state.loading;
+    }
+  },
   getters: {}
 });
 
